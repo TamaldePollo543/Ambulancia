@@ -1,0 +1,93 @@
+    body {
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
+    }
+    
+    h1 {
+        color: #d32f2f;
+        margin-bottom: 10px;
+        font-size: 2.5em;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .subtitle {
+        color: #666;
+        margin-bottom: 30px;
+        font-size: 1.2em;
+    }
+    
+    #mapa {
+        height: 500px;
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        border: 3px solid #fff;
+    }
+    
+    button {
+        padding: 15px 30px;
+        font-size: 18px;
+        margin: 10px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    #buscarBtn {
+        background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+        color: white;
+        font-size: 20px;
+        padding: 18px 40px;
+    }
+    
+    #buscarBtn:hover:not(:disabled) {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(211, 47, 47, 0.3);
+    }
+    
+    #buscarBtn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    
+    .status {
+        padding: 10px 20px;
+        background: #4CAF50;
+        color: white;
+        border-radius: 5px;
+        margin: 10px auto;
+        display: inline-block;
+        font-weight: bold;
+    }
+    
+    .instructions {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        margin: 20px auto;
+        max-width: 800px;
+        text-align: left;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .instructions h3 {
+        color: #333;
+        margin-top: 0;
+    }
+    
+    .instructions ul {
+        padding-left: 20px;
+    }
+    
+    .instructions li {
+        margin: 8px 0;
+    }

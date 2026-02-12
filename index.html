@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<title>Sistema de Emergencias</title>
+
+<!-- Leaflet CSS & JS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Leaflet Locate Plugin -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.js"></script>
+
+<!-- Font Awesome para iconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/style-01.css">
+
 </head>
+
 <body>
-    <h1>Hola </h1>
+
+<h1>Sistema de Emergencias</h1>
+<p class="subtitle">Ubicación en tiempo real y solicitud de ambulancias</p>
+
+<div id="status" class="status">Obteniendo tu ubicación...</div>
+
+<div class="instructions">
+    <h3>Instrucciones:</h3>
+    <ul>
+        <li><strong>Permite el acceso a tu ubicación</strong> cuando el navegador lo solicite</li>
+        <li><strong>Verifica que el mapa muestre tu ubicación correcta</strong></li>
+        <li><strong>Usa "Actualizar Mi Ubicación"</strong> si la ubicación es incorrecta</li>
+        <li><strong>Haz clic en "Buscar ambulancia"</strong> cuando necesites ayuda</li>
+    </ul>
+</div>
+
+<button id="buscarBtn">Buscar ambulancia más cercana</button>
+
+<div id="mapa"></div>
+
+<div style="margin-top: 30px; color: #666; font-size: 0.9em;">
+    <p>⚠️ <strong>Nota:</strong> Si no puedes obtener tu ubicación, el sistema usará Fresnillo, Zacatecas como referencia.</p>
+    <p>🔧 Para soporte técnico, verifica los permisos de ubicación en tu navegador.</p>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
